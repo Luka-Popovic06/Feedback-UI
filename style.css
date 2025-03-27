@@ -5,6 +5,7 @@
 body {
   font-family: 'Kumbh Sans', sans-serif;
   background-color: lightcyan;
+  position: relative;
 }
 #container {
   width: 430px;
@@ -72,4 +73,21 @@ img {
 #btn-open-modal:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
+}
+.hidden {
+  display: none;
+}
+.modal {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 40%;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 10;
+}
+h2 {
+  margin: 30px 200px 30px 0px;
 }
