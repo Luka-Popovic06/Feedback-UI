@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   background-color: lightcyan;
 }
 #container {
@@ -28,7 +28,9 @@ h1 {
 img {
   margin-bottom: 10px;
 }
-.box-1 {
+.btn-1,
+.btn-2,
+.btn-3 {
   align-items: center;
   cursor: pointer;
   border-radius: 10px;
@@ -37,8 +39,20 @@ img {
   font-size: 20px;
   color: darkgreen;
   transition: 0.3s;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
 }
-.box-1:hover {
+.btn-1:hover {
+  background-color: rgba(99, 237, 99, 0.849);
+  color: white;
+  transition: 0.3s;
+}
+.btn-2:hover {
+  background-color: rgba(99, 237, 99, 0.849);
+  color: white;
+  transition: 0.3s;
+}
+.btn-3:hover {
   background-color: rgba(99, 237, 99, 0.849);
   color: white;
   transition: 0.3s;
@@ -46,7 +60,7 @@ img {
 img {
   width: 40px;
 }
-#btn-1 {
+#btn-open-modal {
   padding: 13px 50px;
   border: none;
   background-color: darkcyan;
@@ -55,7 +69,7 @@ img {
   cursor: pointer;
   transition: 0.3s;
 }
-#btn-1:hover {
+#btn-open-modal:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
 }
