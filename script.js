@@ -6,20 +6,28 @@ const container = document.querySelector('#container');
 const modal = document.querySelector('.modal');
 const text = document.querySelector('#text');
 const btnModal = document.querySelector('#btn-open-modal');
+let feedback = '';
+
+function buttonLog(btnAll) {
+  btnAll.style.backgroundColor = 'rgba(99, 237, 99, 0.849)';
+  btnAll.style.color = 'white';
+  if (btnAll === btnOne) {
+    feedback = 'Unhappy';
+  } else if (btnAll === btnTwo) {
+    feedback = 'Neutral';
+  } else {
+    feedback = 'Satisfied';
+  }
+  text.textContent = feedback;
+}
 btnOne.addEventListener('click', function () {
-  btnOne.style.backgroundColor = 'rgba(99, 237, 99, 0.849)';
-  btnOne.style.color = 'white';
-  text.textContent = 'Unhappy';
+  buttonLog(btnOne);
 });
 btnTwo.addEventListener('click', function () {
-  btnTwo.style.backgroundColor = 'rgba(99, 237, 99, 0.849)';
-  btnTwo.style.color = 'white';
-  text.textContent = 'Neutral';
+  buttonLog(btnTwo);
 });
 btnThree.addEventListener('click', function () {
-  btnThree.style.backgroundColor = 'rgba(99, 237, 99, 0.849)';
-  btnThree.style.color = 'white';
-  text.textContent = 'Satisfied';
+  buttonLog(btnThree);
 });
 
 btnModal.addEventListener('click', function () {
